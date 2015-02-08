@@ -20,13 +20,18 @@ h3 {
 }
 
 a {
-  color:#bdbdbd;
-  text-decoration:none
+  text-decoration: none;
 }
 
-a:hover {
-  text-decoration:none;
-  color:#fff
+i {
+  color:#fff;
+  font-size: 24px;
+}
+
+i:hover {
+  color:#fff;
+  color: #64ffda;
+  font-size: 24px;
 }
 
 #wrapper {
