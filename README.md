@@ -1,6 +1,6 @@
 This is a RESTful restaurant rating micro webapp built with Express, Node.js MongoDB, and Backbone.js that provides CRUD services.
 
-<img src="Screenshot/Screenshot_PlateRate_1.png" width="100%" alt="screenschot" title="screenshot">
+<img src="screenshot/Screenshot_PlateRate_1.png" width="100%" alt="screenshot" title="screenshot">
 
 You with me?
 -----------------------
