@@ -38,9 +38,10 @@ input {
 }
 
 .rating {
-  min-width:270px;
-  height:285px;
-  margin:2%;
+  min-width:250px;
+  max-width:250px;
+  height:250px;
+  margin: 2%;
   color:#fff;
   background-color:#f44336;
   padding:3%;
