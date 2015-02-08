@@ -1,0 +1,31 @@
+{
+  "name": "PlateRate",
+  "version": "1.0.0",
+  "author": "Mars Williams <metaphor.formation@gmail.com> (http://cargocollective.com/metaphor_formation)",
+  "description": "A proof of concept resturant ratings app to amuse the staff at Getable",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MarsWilliams/PlateRate.git"
+  },
+  "keywords": [
+    "hire me!"
+  ],
+  "private": true,
+  "engines": {
+    "node": ">=0.10.26"
+  },
+  "scripts": {
+    "start": "node bin/www"
+  },
+  "dependencies": {
+    "ascii-art": "0.0.2-alpha",
+    "body-parser": "~1.10.2",
+    "debug": "~2.1.1",
+    "express": "~4.11.1",
+    "image-to-ascii": "^1.3.0",
+    "jade": "~1.9.1",
+    "mongoose": "^3.8.23",
+    "morgan": "~1.5.1",
+    "serve-favicon": "~2.2.0"
+  }
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Ratings</title>
+	<link rel="stylesheet" type="text/css" href="stylesheets/styles.css">
+	<link rel="stylesheet" type="text/css" href="stylesheets/reset.css">
+	<link href='http://fonts.googleapis.com/css?family=Roboto:300,400' rel='stylesheet' type='text/css'>
+</head>
+<body>
+	<h1> Restaurant Ratings </h1>
+	<div id="wrapper">
+		<div id="ratings" class="sample shadow-z-2">
+			<!-- List of ratings goes here -->
+		</div>
+		<div id="add-new-rating" class="add">
+			<!-- Form to add new rating goes here -->
+		</div>
+	</div>
+
+	<!-- Add Rating View -->
+	<script type="text/template" id="add-rating-template">
+		<h2> Add a Rating </h2>
+		<form action="#" id="add-rating-form" class="form-control-wrapper">
+			Restaurant  <input type="text" name="restaurant">
+			Location <input type="text" name="location">
+			Rating <input type="text" name="rating">
+			<button id="btn-add" class="add">Submit</button>
+		</form>
+	</script>
+	
+	<!-- Individual Rating View -->
+	<script type="text/template" id="rating-template">
+	<div class="rating-content">
+		<h3> <%= restaurant %> </h3>
+		<p> <%= location %> </p><br>
+		<h3> <%= rating %> Stars </h3><br><br>
+		<h5> Updated: </h5>
+		<p> <%= updated_at %> </p>
+	</div>
+	<div class="edit-rating-options">
+		<a href="#" class="btn-edit"> Edit </a><br><br>
+		<a href="#" class="btn-delete"> Delete </a>
+	</div>
+	</script>
+
+	<!-- Edit Rating Wiew -->
+	<script type="text/template" id="edit-rating-template">
+		<form class="edit-rating-form">
+			<h3> Restaurant: </h3>
+			<input class="edit-restaurant" type="text"></input><br>
+			<h3> Location: </h3>
+			<input class="edit-location" type="text"></input><br><br>
+			<h3> Rating: </h3>
+			<input class="edit-rating" type="text"></input><br><br>
+			<input class="btn-submit-edit add" type="submit" value="Save"></input>
+		</form>
+	</script>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script src="http://documentcloud.github.com/underscore/underscore-min.js"></script>
+	<script src="http://documentcloud.github.com/backbone/backbone-min.js"></script>
+	<script src="javascripts/model.js"></script>
+	<script src="javascripts/collection.js"></script>
+	<script src="javascripts/views/editview.js"></script>
+	<script src="javascripts/views/ratingview.js"></script>
+	<script src="javascripts/views/ratingsview.js"></script>
+	<script src="javascripts/app.js"></script>
+
+</body>
+</html>
