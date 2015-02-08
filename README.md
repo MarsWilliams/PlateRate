@@ -1,5 +1,7 @@
 This is a RESTful restaurant rating micro webapp built with Express, Node.js MongoDB, and Backbone.js that provides CRUD services.
 
+<img src="Screenshot/Screenshot_PlateRate_1.png" width="100%" alt="screenschot" title="screenshot">
+
 You with me?
 -----------------------
 You'll need to install node.js and mongodb to start.
