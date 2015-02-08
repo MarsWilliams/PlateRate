@@ -2,7 +2,7 @@
   "name": "PlateRate",
   "version": "1.0.0",
   "author": "Mars Williams <metaphor.formation@gmail.com> (http://cargocollective.com/metaphor_formation)",
-  "description": "A proof of concept resturant ratings app to amuse the staff at Getable",
+  "description": "This is a RESTful restaurant rating micro webapp built with Express, Node.js MongoDB, and Backbone.js that provides CRUD services.",
   "repository": {
     "type": "git",
     "url": "https://github.com/MarsWilliams/PlateRate.git"
