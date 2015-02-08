@@ -1,4 +1,6 @@
-app.EditRatingView = Backbone.View.extend({
+if (typeof plateRate === "undefined") plateRate = {};
+
+plateRate.EditRatingView = Backbone.View.extend({
   tagName: "div",
   className: "rating",
   template: _.template($("#edit-rating-template").html()),
@@ -45,7 +47,7 @@ app.EditRatingView = Backbone.View.extend({
       return;
     }
     this.model.save();
-    var ratingView = new app.RatingView({
+    var ratingView = new plateRate.RatingView({
       model: this.model
     });
     this.$el.replaceWith(ratingView.$el);

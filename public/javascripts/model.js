@@ -1,6 +1,6 @@
-var app = app || {};
+if (typeof plateRate === "undefined") plateRate = {};
 
-app.Rating = Backbone.Model.extend({
+plateRate.Rating = Backbone.Model.extend({
   defaults: {
     restaurant: 'Momiji',
     location: 'Seattle, Washington',

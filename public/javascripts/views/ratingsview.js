@@ -1,11 +1,13 @@
-app.RatingsView = Backbone.View.extend({
-  el: $("#wrapper"),
+if (typeof plateRate === "undefined") plateRate = {};
+
+plateRate.RatingsView = Backbone.View.extend({
+  el: $("#wrplateRateer"),
   formTemplate: _.template($('#add-rating-template').html()),
   events: {
     'click #btn-add': 'addRating',
   },
   initialize: function() {
-    this.collection = new app.Ratings();
+    this.collection = new plateRate.Ratings();
     this.collection.fetch({
       reset: true
     });
@@ -22,7 +24,7 @@ app.RatingsView = Backbone.View.extend({
     $("#add-new-rating").html(addRatingForm);
   },
   renderRating: function(rating) {
-    var ratingView = new app.RatingView({
+    var ratingView = new plateRate.RatingView({
       model: rating
     });
     $("#ratings").append(ratingView.render().el);

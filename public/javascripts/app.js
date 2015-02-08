@@ -1,3 +1,5 @@
+if (typeof plateRate === "undefined") plateRate = {};
+
 $(function() {
-  new app.RatingsView();
+  new plateRate.RatingsView();
 });
