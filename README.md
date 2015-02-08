@@ -22,7 +22,7 @@ To start the show:
 
 	in another terminal
 
-	`$ mongoimport --db ratings --collection ratings restaurantRatings.json --jsonArray`
+	`$ mongoimport --db ratings --collection ratings dbinit.json --jsonArray`
 
 	
 	and in another terminal

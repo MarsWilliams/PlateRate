@@ -2,38 +2,32 @@
 {
 "restaurant": "Momiji",
 "location":"Seattle",
-"rating": 5,
-"updated_at": Date()
+"rating": 5
 	
 },
 {
 	"restaurant": "Smith",
 "location":"Seattle",
-"rating": 5,
-"updated_at": Date()
+"rating": 5
 },
 {
 	"restaurant": "Mamnoon",
 "location":"Seattle",
-"rating": 5,
-"updated_at": Date()
+"rating": 5
 },
 {
 	"restaurant": "Pancho Villa",
 "location":"San Francisco",
-"rating": 5,
-"updated_at": Date()
+"rating": 5
 },
 {
 "restaurant": "My Ivy",
 "location":"San Francisco",
-"rating": 3,
-"updated_at": Date()
+"rating": 3
 },
 {
 "restaurant": "Jane",
 "location":"San Francisco",
-"rating": 5,
-"updated_at": Date()
+"rating": 5
 }
 ]
