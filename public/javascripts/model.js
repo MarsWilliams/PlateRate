@@ -16,7 +16,7 @@ app.Rating = Backbone.Model.extend({
     },
     rating: {
       required: true,
-      range: [1,6],
+      range: [1, 6],
     }
   },
   initialize: function() {
