@@ -28,6 +28,10 @@ i {
   font-size: 24px;
 }
 
+input {
+  height: 24px;
+}
+
 #wrapper {
   width:95%;
   margin:5% auto
@@ -46,7 +50,7 @@ i {
 
 .rating-content {
   display:inline-block;
-  line-height:.5
+  line-height:.5;
 }
 
 .edit-rating-options {
