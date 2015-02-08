@@ -19,6 +19,12 @@ To start the show:
 
 	`$ mongod`
 
+
+	in another terminal
+
+	`$ mongoimport --db ratings --collection ratings restaurantRatings.json --jsonArray`
+
+	
 	and in another terminal
 
 	`$ node bin/www`

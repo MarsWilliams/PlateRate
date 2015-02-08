@@ -1,0 +1,39 @@
+[
+{
+"restaurant": "Momiji",
+"location":"Seattle",
+"rating": 5,
+"updated_at": Date()
+	
+},
+{
+	"restaurant": "Smith",
+"location":"Seattle",
+"rating": 5,
+"updated_at": Date()
+},
+{
+	"restaurant": "Mamnoon",
+"location":"Seattle",
+"rating": 5,
+"updated_at": Date()
+},
+{
+	"restaurant": "Pancho Villa",
+"location":"San Francisco",
+"rating": 5,
+"updated_at": Date()
+},
+{
+"restaurant": "My Ivy",
+"location":"San Francisco",
+"rating": 3,
+"updated_at": Date()
+},
+{
+"restaurant": "Jane",
+"location":"San Francisco",
+"rating": 5,
+"updated_at": Date()
+}
+]
