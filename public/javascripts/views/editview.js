@@ -1,5 +1,6 @@
 if (typeof plateRate === "undefined") plateRate = {};
 
+// creates view that switches from rating card to rating form
 plateRate.EditRatingView = Backbone.View.extend({
   tagName: "div",
   className: "rating",
@@ -13,6 +14,7 @@ plateRate.EditRatingView = Backbone.View.extend({
   render: function() {
     var html = this.template();
     this.$el.html(html);
+    // identifies new rating values in input fields
     this.$el.find(".edit-restaurant").val(this.model.get("restaurant"));
     this.$el.find(".edit-location").val(this.model.get("location"));
     this.$el.find(".edit-rating").val(this.model.get("rating"));
@@ -20,6 +22,7 @@ plateRate.EditRatingView = Backbone.View.extend({
   submitEdit: function(e) {
     e.preventDefault();
     var restaurant = this.$el.find(".edit-restaurant").val();
+    // sets model to new values; checks for bad values
     if (restaurant) {
       this.model.set("restaurant", restaurant);
     }
@@ -46,11 +49,14 @@ plateRate.EditRatingView = Backbone.View.extend({
       this.val(null);
       return;
     }
+    // saves changes to model
     this.model.save();
     var ratingView = new plateRate.RatingView({
       model: this.model
     });
+    // siwtches back to rating card
     this.$el.replaceWith(ratingView.$el);
+    // removes form view from dom
     this.remove();
   }
 });

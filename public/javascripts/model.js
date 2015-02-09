@@ -1,5 +1,6 @@
 if (typeof plateRate === "undefined") plateRate = {};
 
+// defines model and sets defualts; validates data for posts
 plateRate.Rating = Backbone.Model.extend({
   defaults: {
     restaurant: 'Momiji',

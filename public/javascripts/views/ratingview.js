@@ -1,5 +1,6 @@
 if (typeof plateRate === "undefined") plateRate = {};
 
+// creates rating cards in view and defines model interaction
 plateRate.RatingView = Backbone.View.extend({
   tagName: 'div',
   className: 'rating',
